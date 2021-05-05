@@ -36,8 +36,9 @@ class Module(core.module.Module):
             )
         )
 
+        self.__player = self.parameter("player", "")
         self.__song = ""
-        self.__cmd = "playerctl "
+        self.__cmd = f"playerctl --player={self.__player} "
         self.__format = self.parameter("format", "{artist} - {title}")
 
         widget_map = {}
