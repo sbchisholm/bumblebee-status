@@ -1056,6 +1056,8 @@ Parameters:
       Available values are: {album}, {title}, {artist}, {trackNumber}
     * playerctl.layout:   Comma-separated list to change order of widgets (defaults to song, previous, pause, next)
       Widget names are: playerctl.song, playerctl.prev, playerctl.pause, playerctl.next
+    * playerctl.player:   Set the players used (defaults to the first player playerctl finds)
+      To limit to just spotify for example use: 'spotify'.  Run the command 'playerctl --list-all' to see other valid settings.
 
 Parameters are inherited from `spotify` module, many thanks to its developers!
 
